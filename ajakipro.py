@@ -31,7 +31,7 @@ try:
 		#first build a unique clip name
 		uniqueID = str(uuid.uuid4())
 		uniqueID = uniqueID[0:8]
-		clipname = clipname + '_' + datetime.today().strftime('%Y%m%d') + '_' + uniqueID
+		clipname = datetime.today().strftime('%y-%m-%d_%H%M') + '_' + clipname +'_' + uniqueID
 		print(clipname)
 
 		#next turn off custom clip take
